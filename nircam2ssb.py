@@ -1,6 +1,6 @@
 #! /usr/bin/env python
 
-# This script converts the fits files from the NIRCam CRYO runs at Lockheed
+# This script converts the fits files from the NIRCam CRYO runs
 # into ssb-conform fits files.
 
 import sys, os,re,math
@@ -252,7 +252,6 @@ class nircam2ssbclass:
         else:
             print 'FIX ME getRunID!!!!',filename
             sys.exit(0)
-        print runID
         return(runID)
 
     def updatemetadata_CRYOX(self,runID,filename=None):
